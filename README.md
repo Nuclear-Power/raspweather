@@ -47,7 +47,7 @@ Feel free to help
 I got bored and ordered parts on 10/16/17. The rest will be written here. 
 
 ## Credits
-OG - MattyMO
+OG - MattyMo
 
 ## License
 GNU GENERAL PUBLIC LICENSE
