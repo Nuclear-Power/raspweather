@@ -29,11 +29,12 @@ TODO: Write usage instructions
 4 - Add rain and wind sensor support
 5 - Calibrate temp sensor in a better fashion
 6 - Make web interface
+7 - Obtain/make some sort of weatherproof box for mounting project outdoors
 
 Feel free to help
 
 ## History
-TODO: Write history
+I got bored and ordered parts on 10/16/17. The rest will be written here. 
 
 ## Credits
 OG - MattyMO
