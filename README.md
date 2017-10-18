@@ -5,10 +5,16 @@ Raspberry Pi 3 and Sensehat Weather Station with Python and Noir Camera
 Install Python 3
 
 Go to https://www.wunderground.com/
+
 Get an account
+
 Click on my profile on the top right
+
 There should be a section to view weather stations
+
 Add a weather station, you should get an ID and a password
+
+Add your ID and PASSWORD into main.py
 
 See http://wiki.wunderground.com/index.php/PWS_-_Upload_Protocol for information on uploading data, URL construction, etc
 
