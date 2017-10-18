@@ -14,7 +14,11 @@ There should be a section to view weather stations
 
 Add a weather station, you should get an ID and a password
 
+Download project and put in folder
+
 Add your ID and PASSWORD into main.py
+
+Navigate to folder containing the project and run with 'python3 main.py' via shell/cmd whatever
 
 See http://wiki.wunderground.com/index.php/PWS_-_Upload_Protocol for information on uploading data, URL construction, etc
 
