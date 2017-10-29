@@ -7,14 +7,16 @@ from datetime import date
 from datetime import datetime
 
 '''
-Put your settings here. Get ID and PASSWORD from the Weather Underground Personal Weather Station website. 
+Put your settings here. Get ID and PASSWORD from the Weather 
+Underground Personal Weather Station website. 
 See readme for more information
 '''
 ID = "" #put your personal weather station ID between the quotes
 PASSWORD = "" #put your personal weather station password between the quotes
 WU_GET_URL = "https://weatherstation.wunderground.com/weatherstation/updateweatherstation.php" #weather updates URL
 '''
-The following three variables are used for obtaining local weather, and may be implemented in future versions
+The following three variables are used for obtaining local weather,
+and may be implemented in future versions
 of this software using the function get_local_weather
 '''
 LOCAL_WEATHER_KEY = "" #Weather underground local weather key
@@ -56,20 +58,22 @@ def get_local_weather(l, s, c):
 
 
 def pws_upload(humidity, dewpoint, temp, pressure):
-	'''uses request to send the data to the weather underground url, payload gets tacked onto WU_GET_URL'''
+	'''uses request to send the data to the weather underground url, 
+	payload gets tacked onto WU_GET_URL
+	'''
 	payload = {
-		'ID' : ID, 
+		'ID': ID, 
 		'PASSWORD': PASSWORD, 
 		'dateutc': 'now', #can be changed to system time
-		'humidity' : humidity,
-		'dewptf' : dewpoint, 
-		'tempf' : temp, 
-		'baromin' : pressure, 
-		'action' : 'updateraw'
+		'humidity': humidity,
+		'dewptf': dewpoint, 
+		'tempf': temp, 
+		'baromin': pressure, 
+		'action': 'updateraw'
 		}
 
 	try:
-		r = requests.get(WU_GET_URL, params = payload)
+		r = requests.get(WU_GET_URL, params=payload)
 	except requests.exceptions.RequestException as e:
 		print(e)
 		sys.exit(1)
@@ -101,5 +105,6 @@ def main():
 		print('----------------------------------------------------')
 		sense.show_message("{:02.0f}".format(temp), text_colour=[0,0,255])
 		time.sleep(10)
+
 
 main()

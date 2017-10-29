@@ -3,11 +3,11 @@ Raspberry Pi 3 and Sensehat Weather Station with Python and Noir Camera
 
 ## Installation
 Linux: Run this in terminal on your RP3
-sudo apt update
-sudo apt upgrade
-sudo apt install sense_hat
-download this repository via git or web and make a local directory for it
-sudo reboot
+1. sudo apt update
+2. sudo apt upgrade
+3. sudo apt install sense_hat
+4. download this repository via command line git or web and make a local directory for it
+5. sudo reboot
 
 Go to https://www.wunderground.com/
 
